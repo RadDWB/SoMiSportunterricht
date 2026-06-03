@@ -563,15 +563,35 @@
             </svg>
             Drucken / Als PDF speichern
         </button>
-        <span class="print-hint">Die Grafik wird querformatig gedruckt</span>
+        <span class="print-hint">Die Grafiken werden querformatig gedruckt</span>
     </div>
+
+    <p class="print-hint" style="margin-bottom: 28px; max-width: 760px; line-height: 1.7;">
+        <strong>Hinweis:</strong> Die beiden Varianten des „Check für die Sportnote“ sind inhaltlich identisch, je nach Jahrgangsstufe aber unterschiedlich grafisch aufbereitet – Variante&nbsp;1 für ältere, Variante&nbsp;2 für jüngere Schülerinnen und Schüler. Am besten zu Beginn des Schuljahres verteilen und die SuS zusätzlich über die Gewichtung der Teilbereiche im jeweiligen Unterrichtsvorhaben informieren.
+    </p>
 
     <div class="grafiken-grid">
         <div class="grafik-card" onclick="openLightbox(0)" role="button" tabindex="0" aria-label="Grafik vergrößern">
             <img src="SoMi/SoMi_DWB2026.png" alt="Beurteilungsbereich Sonstige Mitarbeit im Sportunterricht" loading="eager">
             <div class="grafik-caption">
-                <div class="grafik-num">Seite 1 von 1</div>
+                <div class="grafik-num">Seite 1 von 3</div>
                 <div class="grafik-label">Beurteilungsbereich „Sonstige Mitarbeit“</div>
+                <div class="grafik-hint">Antippen zum Vergrößern &amp; Zoomen</div>
+            </div>
+        </div>
+        <div class="grafik-card" onclick="openLightbox(1)" role="button" tabindex="0" aria-label="Grafik vergrößern">
+            <img src="SoMi/Check_Sportnote_Variante1_AltereSchueler.png" alt="Check für die Sportnote Variante 1 für ältere Schülerinnen und Schüler" loading="lazy">
+            <div class="grafik-caption">
+                <div class="grafik-num">Seite 2 von 3</div>
+                <div class="grafik-label">Check für die Sportnote – Variante 1 (ältere SuS)</div>
+                <div class="grafik-hint">Antippen zum Vergrößern &amp; Zoomen</div>
+            </div>
+        </div>
+        <div class="grafik-card" onclick="openLightbox(2)" role="button" tabindex="0" aria-label="Grafik vergrößern">
+            <img src="SoMi/Check_Sportnote_Variante2_JuengereSchueler.png" alt="Check für die Sportnote Variante 2 für jüngere Schülerinnen und Schüler" loading="lazy">
+            <div class="grafik-caption">
+                <div class="grafik-num">Seite 3 von 3</div>
+                <div class="grafik-label">Check für die Sportnote – Variante 2 (jüngere SuS)</div>
                 <div class="grafik-hint">Antippen zum Vergrößern &amp; Zoomen</div>
             </div>
         </div>
@@ -593,7 +613,7 @@
             © 2026 Straight Edge Media<br>
             Sonstige Mitarbeit im Sportunterricht · Leistungsbewertung
         </p>
-        <span class="version-pill">v 1.0.0</span>
+        <span class="version-pill">v 1.1.0</span>
     </div>
 </footer>
 
@@ -620,6 +640,8 @@
 <script>
 const IMAGES = [
     { src: 'SoMi/SoMi_DWB2026.png', label: 'Beurteilungsbereich „Sonstige Mitarbeit“ im Sportunterricht' },
+    { src: 'SoMi/Check_Sportnote_Variante1_AltereSchueler.png', label: 'Check für die Sportnote – Variante 1 (ältere Schülerinnen und Schüler)' },
+    { src: 'SoMi/Check_Sportnote_Variante2_JuengereSchueler.png', label: 'Check für die Sportnote – Variante 2 (jüngere Schülerinnen und Schüler)' },
 ];
 
 let currentIdx = 0;
